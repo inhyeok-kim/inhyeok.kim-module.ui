@@ -1,8 +1,9 @@
 {
   "name": "inhyeok.kim-module.ui",
-  "version": "0.1.1",
+  "version": "0.1.5",
   "private": false,
-  "main": "dist/TestButton.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -14,6 +15,7 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
+    "styled-components": "^5.3.5",
     "typescript": "^4.7.2",
     "web-vitals": "^2.1.4"
   },
@@ -22,7 +24,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "publish:npm" : "rm -rf ./dist && tsc"
+    "publish:npm": "rm -rf ./dist && tsc"
   },
   "eslintConfig": {
     "extends": [
@@ -41,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/styled-components": "^5.1.25"
   }
 }

@@ -1,10 +1,10 @@
 import React from 'react';
-import TestButton from './lib/TestButton';
+import ButtonOnOff from './lib/Buttons/ButtonOnOff';
 
 function App() {
   return (
     <div className="App">
-      <TestButton />
+      <ButtonOnOff onChange={(e)=>{console.log(e)}} />
     </div>
   );
 }
